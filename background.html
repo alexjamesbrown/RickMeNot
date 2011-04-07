@@ -1,0 +1,33 @@
+<script>
+
+    // Simple array containing the URLs of Rick Astley - Never Gonna Give You Up videos.
+    // In this version, we're hard coding it, however later on, we'll make this dynamic
+    var rickUrls = new Array();
+
+    // Function that is called on the body onload event
+    function init() {
+
+        //fill our array with the URLs
+        rickUrls = new Array(
+		"http://www.youtube.com/watch?v=oHg5SJYRHA0",
+		"http://www.youtube.com/watch?v=EK2tWVj6lXw",
+		"http://www.youtube.com/watch?v=XZ5TajZYW6Y"
+		)
+    }
+
+    // Called when the url of a tab changes.
+    function tab_updated(tabId, changeInfo, tab) {
+        for (a in rickUrls) {
+            if (tab.url == rickUrls[a]) {
+                chrome.tabs.update(tab.id, { url: 'savedFromARickRoll.html' });
+            }
+        }
+    };
+
+    // Listen for any changes to the URL of any tab.
+    chrome.tabs.onUpdated.addListener(tab_updated);
+
+</script>
+
+<body onload="init()">
+</body>

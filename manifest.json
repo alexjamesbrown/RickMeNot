@@ -1,0 +1,15 @@
+{
+  "name": "RickRoll-Me-Not",
+  "version": "0.1",
+  "description": "Prevents you from being rickroll'd.",
+  "background_page": "background.html",
+
+  "permissions" : [
+    "tabs"
+  ],
+
+  "icons" : {
+    "48" : "icon-48.png",
+    "128" : "icon-128.png"
+  }
+}
