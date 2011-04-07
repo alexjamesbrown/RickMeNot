@@ -1,0 +1,3 @@
+This is a quick demo of how to create a Google Chrome extension.
+Basically, it prevents you from getting rickRoll'd.
+Upon detecting your browser being directed to a known URL for Rick Astleys "Never Gonna Give You Up" it will redirect you to a "safe" page.
