@@ -1,6 +1,9 @@
 {
+  "manifest_version": 2,
   "name": "RickRoll-Me-Not",
   "version": "0.1",
+  
+  "default_locale": "en",
   "description": "Prevents you from being rickroll'd.",
   "background_page": "background.html",
 
